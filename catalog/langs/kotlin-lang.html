@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Языки программирования</title>
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark">
+
+
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid justify-content-start ">
+    <span class="navbar-brand ms-4">Языки</span>
+    <a class="nav-link ms-4" href="/index.html">Главная</a>
+    <a class="nav-link ms-3" href="/languages.html">Список языков</a>
+  </div>
+</nav>
+
+<div class="container text-center text-light">
+  <div class="row mt-4">
+    <div class="col-8">
+        <h1>Язык программирования Kotlin</h1>
+    </div>
+    <div class="col-4">
+        <div>
+          <a href="/languages.html" class ="text-white">Назад к списку</a>
+          <a class="btn btn-light ms-3" href="/languages.html" role="button">Назад</a>
+        </div>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-6 text-start">
+      <h2>Краткое описание</h2>
+      <p>Kotlin - кроссплатформенный, статически типизированный, объектно-ориентированный язык программирования, работающий поверх Java Virtual Machine и разрабатываемый компанией JetBrains. Также компилируется в JavaScript и в исполняемый код ряда платформ через инфраструктуру LLVM. </p>
+      <p>Язык полностью совместим с Java, что позволяет Java-разработчикам постепенно перейти к его использованию; в частности, язык также встраивается в Android, что позволяет для существующего Android-приложения внедрять новые функции на Kotlin без переписывания приложения целиком. </p>
+      <p>Плюсы:</p>
+      <div class="row">
+        <div class="col-6">
+          <ul class="list-group">
+            <li class="list-group-item">Мультиплатформенность (компиляция/транспиляция в Native/JS);</li>
+            <li class="list-group-item">Безопасность типов;</li>
+            <li class="list-group-item">Строковые шаблоны;</li>
+            <li class="list-group-item">Многофункциональность;</li>
+            <li class="list-group-item">Лаконичный, интуитивно понятный синтаксис.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 text-start">
+      <h2>Пример исходного кода</h2>
+<pre><code>fun main() {
+  val scope = "world"
+  println("Hello, $scope!")
+}
+fun sayHello(maybe: String?, neverNull: Int) {
+   // use of elvis operator
+   val name: String = maybe ?: "stranger"
+   println("Hello, $name")
+}
+// returns null if foo is null, or bar() returns null, or baz() returns null
+  foo ?. bar() ?. baz()</code></pre>
+    </div>
+  </div>
+</div>
+
+<script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
